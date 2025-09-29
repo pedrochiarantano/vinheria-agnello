@@ -26,7 +26,21 @@ O grande desafio passou a ser a criação de uma solução que preservasse a ess
    - Visualização das imagens da Vinheria.
 
  ### Sobre Nós
-   - Conta a história dos fundadores da vinheria.
+   - História dos fundadores e fundação da vinheria.
 
  ### Contato
    - Página de contato para os clientes.
+
+---
+
+## 👤 Nome dos Integrantes
+ - Pedro Chiarantano de Paula
+ - Gabriel Ferreira Santos Almeida
+ - Erik Kazuo Funagoshi Nery
+ - Nícolas Miguel Bittencourt Tanajura
+
+---
+
+## 👾 Link para o site publicado no Github Pages
+
+https://lorem/index.html
