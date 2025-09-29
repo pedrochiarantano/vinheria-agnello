@@ -13,3 +13,20 @@ Com a chegada da pandemia, o negócio sofreu forte impacto devido às restriçõ
 O grande desafio passou a ser a criação de uma solução que preservasse a essência da vinheria no ambiente online, garantindo uma experiência semelhante à da loja física. Para alcançar esse objetivo, a proposta foi conduzir o projeto com métodos ágeis, contando com Bianca como Product Owner e um desenvolvedor sênior no papel de Scrum Master. A partir dessa abordagem, buscou-se alinhar tradição e inovação, mantendo o atendimento humano e consultivo como marca central do negócio.
 
 ---
+
+## ⚙️ Estrutura do Projeto
+
+ # Página Inicial
+   - Apresenta a Vinheria Agnello com seu histórico.
+
+ # Catálogo de Vinhos
+   - Exibe todos os vinhos à venda.
+   
+ # Galeria da Vinheria
+   - Visualização das imagens da Vinheria.
+
+  # Sobre Nós
+   - Conta a história dos fundadores da vinheria.
+
+ # Contato
+   - Página de contato para os clientes.
