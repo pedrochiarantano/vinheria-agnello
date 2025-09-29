@@ -16,17 +16,17 @@ O grande desafio passou a ser a criação de uma solução que preservasse a ess
 
 ## ⚙️ Estrutura do Projeto
 
- # Página Inicial
+ ### Página Inicial
    - Apresenta a Vinheria Agnello com seu histórico.
 
- # Catálogo de Vinhos
+ ### Catálogo de Vinhos
    - Exibe todos os vinhos à venda.
    
- # Galeria da Vinheria
+ ### Galeria da Vinheria
    - Visualização das imagens da Vinheria.
 
-  # Sobre Nós
+ ### Sobre Nós
    - Conta a história dos fundadores da vinheria.
 
- # Contato
+ ### Contato
    - Página de contato para os clientes.
