@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="vinheria, contato, vinho, vinícola, formulário, email, mensagem">
+    <meta name="description" content="Entre em contato com a Vinheria Agnello. Envie sua mensagem, dúvidas ou sugestões pelo nosso formulário de contato.">
+    <title>Contato | Vinheria Agnello</title>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="/src/assets/logoVinheria.png" alt="Logo Vinheria Agnello" id="logo-header" style="height: 80px; margin-right: 24px;">
+            <nav id="main-nav">
+                <ul style="display: flex; gap: 20px; margin: 0; padding: 0; list-style: none;">
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+        <section id="contato-section">
+            <h1>Fale Conosco</h1>
+            <form id="contato-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="enviar-btn">Enviar</button>
+            </form>
+            <div class="contato-img">
+                <footer>
+                <p>&copy; 2024 Vinheria Agnello. Todos os direitos reservados.</p>
+                </footer>
+               
+                
