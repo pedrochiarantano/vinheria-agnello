@@ -22,7 +22,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 h1 {
-  color: #8d1436;
+  color: #561219;
 }
 img {
   max-width: 100%;
@@ -61,11 +61,11 @@ p {
 }
 #main-nav ul li a.active,
 .horizontal-menu li a.active {
-  color: #800020;
+  color: #561219;
 }
 #main-nav ul li a:hover,
 .horizontal-menu li a:hover {
-  color: #800020;
+  color: #561219;
 }
 
 .fotoCatalogo {
