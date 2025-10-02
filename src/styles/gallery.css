@@ -1,0 +1,23 @@
+.gallery-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5rem;
+  color: #561219;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: auto auto;
+  gap: 20px;
+  width: 100%;
+  max-width: 96vw;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
