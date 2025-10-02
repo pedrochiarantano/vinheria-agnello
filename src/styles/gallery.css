@@ -1,9 +1,4 @@
-.gallery-title {
-  text-align: center;
-  margin: 20px 0;
-  font-size: 2.5rem;
-  color: #561219;
-}
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
