@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 60px;
+  gap: 80px;
+}
+
+main section a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  background-color: #E4DFDC;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s linear;
+  position: relative;
+  left: 36%;
+}
+
+main section a:hover {
+  background-color: #561219;
+  color: #fff;
+}
+
+main section p {
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+iframe {
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 40px;
+}
