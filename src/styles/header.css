@@ -1,6 +1,39 @@
 #header {
-  background-color: aqua;
+  background-color: #E4DFDC;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
+#header img {
+  width: 150px;
+  height: auto;
+}
 
+#header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
 
+#header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s linear;
+}
+
+#header nav ul li a:hover {
+  background-color: #fff;
+}
+
+#header nav ul li:first-child a {
+  background-color: #fff;
+}
+
+#header nav ul li:first-child a:hover {
+  color: #561219;
 }

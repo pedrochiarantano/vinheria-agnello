@@ -1,5 +1,9 @@
 #footer {
-  background-color: aqua;
-
-
+  background-color: #E4DFDC;
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
