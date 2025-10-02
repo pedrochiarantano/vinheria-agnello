@@ -43,4 +43,4 @@ O grande desafio passou a ser a criação de uma solução que preservasse a ess
 
 ## 👾 Link para o site publicado no Github Pages
 
-https://lorem/index.html
+https://pedrochiarantano.github.io/vinheria-agnello/
