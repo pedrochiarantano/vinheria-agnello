@@ -1,0 +1,309 @@
+/* ============================================
+   EFEITOS VISUAIS - VINHERIA AGNELLO
+   ============================================ */
+
+/* ========================================
+   PSEUDO-CLASSES
+   ======================================== */
+
+/* 1. :hover em links do menu com escala */
+#header nav ul li a:hover {
+  transform: scale(1.05);
+}
+
+/* 2. :nth-child() - Destaque alternado nos itens do catálogo */
+.wine-item:nth-child(odd) {
+  background: linear-gradient(135deg, #f8f5f2 0%, #E4DFDC 100%);
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.wine-item:nth-child(even) {
+  background: linear-gradient(135deg, #E4DFDC 0%, #d4cdc7 100%);
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* 3. :focus em inputs do formulário */
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border: 2px solid #561219;
+  box-shadow: 0 0 10px rgba(86, 18, 25, 0.3);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* 4. :not() - Aplicar efeito a todos os botões exceto o de submit */
+button:not(.submit-button):hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+/* 5. :first-child - Destaque especial para o primeiro item da galeria */
+.gallery img:first-child {
+  border: 3px solid #561219;
+  box-shadow: 0 8px 20px rgba(86, 18, 25, 0.4);
+}
+
+/* ========================================
+   PSEUDO-ELEMENTOS
+   ======================================== */
+
+/* 1. ::before - Adicionar ícone decorativo antes dos títulos h2 */
+h2::before {
+  content: "🍷 ";
+  font-size: 1.2em;
+  margin-right: 1px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 2. ::after - Linha decorativa após títulos h1 */
+h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #561219, #8b2a35, #561219);
+  margin: 15px auto;
+  border-radius: 2px;
+  animation: expandLine 2s ease-in-out infinite;
+}
+
+/* 3. ::first-letter - Estilizar primeira letra dos parágrafos */
+div p::first-letter {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #561219;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+}
+
+/* 4. ::selection - Mudar cor da seleção de texto */
+::selection {
+  background-color: #561219;
+  color: #fff;
+}
+
+/* ========================================
+   ANIMAÇÕES COM @KEYFRAMES
+   ======================================== */
+
+/* 1. Animação de flutuação para o ícone de vinho */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 2. Animação de expansão da linha decorativa */
+@keyframes expandLine {
+  0%, 100% {
+    width: 100px;
+    opacity: 1;
+  }
+  50% {
+    width: 150px;
+    opacity: 0.7;
+  }
+}
+
+/* 3. Animação de entrada suave para sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 4. Animação de pulso para botões importantes */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(86, 18, 25, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(86, 18, 25, 0);
+  }
+}
+
+/* 5. Animação de rotação suave para imagens em hover */
+@keyframes rotateIn {
+  from {
+    transform: rotate(-5deg) scale(0.95);
+  }
+  to {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+/* Aplicar animação de entrada às sections */
+main section {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+main section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+/* ========================================
+   TRANSIÇÕES
+   ======================================== */
+
+/* Transição suave para imagens do catálogo */
+.wine-item img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+.wine-item img:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+/* Transição para botão de submit */
+.submit-button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-button:hover {
+  background-color: #7a1a24;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(86, 18, 25, 0.4);
+  animation: pulse 1.5s infinite;
+}
+
+.submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(86, 18, 25, 0.4);
+}
+
+/* Transição para imagens da galeria */
+.gallery img {
+  transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
+  filter: grayscale(0);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0) brightness(1.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  position: relative;
+}
+
+/* Transição para links do catálogo */
+main section a {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main section a:hover {
+  box-shadow: 0 8px 20px rgba(86, 18, 25, 0.3);
+  transform: translateY(-3px);
+}
+
+/* ========================================
+   TRANSFORMAÇÕES
+   ======================================== */
+
+/* 1. Scale - Efeito de zoom nos itens do catálogo ao hover */
+.wine-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 2. Rotate - Rotação sutil da logo ao hover */
+#header img {
+  transition: transform 0.5s ease;
+}
+
+#header img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* 3. Translate - Movimento para cima em cards */
+.wine-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wine-item:hover {
+  transform: translateY(-8px);
+}
+
+/* 4. Skew - Efeito de inclinação sutil no iframe ao hover */
+iframe {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+iframe:hover {
+  transform: skewY(-1deg) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* 5. Multiple transforms - Combinação de efeitos no footer */
+#footer {
+  transition: all 0.3s ease;
+}
+
+#footer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   EFEITOS EXTRAS PARA MELHOR UX
+   ======================================== */
+
+/* Efeito de loading no botão de submit */
+.submit-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.submit-button:active::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Destaque suave para elementos focados via teclado */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #561219;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Animação suave para reveal de conteúdo */
+.wine-item,
+.gallery img {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Efeito de brilho sutil no hover de links */
+#header nav ul li a {
+  position: relative;
+  overflow: hidden;
+}
+
